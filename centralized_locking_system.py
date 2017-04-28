@@ -108,11 +108,9 @@ class ResourceSystem(object):
             if resource_name in self.locks.keys():
                 if self.locks[resource_name]:
                     self.queues[resource_name].append(service)
-                    # add timeout in queue
                     return False
                 else:
                     self.locks[resource_name] = service
-                    # add timeout for accesing
                     return True
             else:
                 raise ResourceNonExistentException
@@ -144,7 +142,8 @@ class ResourceSystem(object):
 
     def detect_simple_deadlocks(self):
         """
-        detects simple - non circular deadlocks. does not detect more complex deadlocks
+        detects simple - non circular deadlocks. does not detect more complex deadlocks.
+        resolves the deadlock by releasing one of the resources.
         :return: None
         """
         for key, value in self.locks.items():
