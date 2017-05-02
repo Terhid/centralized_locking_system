@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../MITx 6.002/.idea/MITx 6.002.iml" filepath="$PROJECT_DIR$/../MITx 6.002/.idea/MITx 6.002.iml" />
+      <module fileurl="file://D:/MAI/Thesis/Python/.idea/Python.iml" filepath="D:/MAI/Thesis/Python/.idea/Python.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/centralized_locking_system.iml" filepath="$PROJECT_DIR$/.idea/centralized_locking_system.iml" />
     </modules>
   </component>
